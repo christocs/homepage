@@ -1,7 +1,5 @@
-import React, {createRef} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.scss';
-import {Button} from "semantic-ui-react";
 import Particles from "react-particles-js";
 
 export class App extends React.Component {
