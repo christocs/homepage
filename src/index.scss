@@ -5,7 +5,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: midnightblue;
+    //background: midnightblue;
 }
 
 code {
@@ -14,12 +14,59 @@ code {
 }
 
 .particles {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
     width: 100%;
     height: 100%;
 
     canvas {
+        background-image: linear-gradient(#5236ff, #0066ff);
         position: absolute;
         z-index: -1;
-        user-select: none;
+        //user-select: none;
     }
+}
+
+.backdrop {
+    opacity: 0.75;
+    margin: 2rem;
+    background: black;
+    //height:2000px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    color: #f7ffe6;
+    text-align: right;
+    display: block;
+}
+
+.heading {
+    color: #f7ffe6;
+    text-align: left;
+    display: block;
+}
+
+.list-item {
+    color: lightgray;
+    text-align: left;
+    display: block;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.paragraph {
+    color: lightgray;
+    text-align: left;
+    display: block;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
