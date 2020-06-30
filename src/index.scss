@@ -5,7 +5,6 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    //background: midnightblue;
 }
 
 code {
@@ -34,39 +33,120 @@ code {
 
 .backdrop {
     opacity: 0.75;
-    margin: 2rem;
+    margin: 0.5vw;
     background: black;
-    //height:2000px;
     height: 100%;
+    width: 99vw;
     border-radius: 10px;
 }
 
-.title {
+h1 {
     color: #f7ffe6;
     text-align: right;
     display: block;
+    line-height: 1em;
+    font-size: 56px;
+    margin: 0;
+    padding-right: 2vw;
+    width: 100vw;
 }
 
-.heading {
+h2 {
+    color: #f7ffe6;
+    text-align: right;
+    display: block;
+    line-height: 1em;
+    font-size: 32px;
+    margin: 0;
+    padding-right: 2vw;
+    width: 100vw;
+}
+
+h3 {
     color: #f7ffe6;
     text-align: left;
     display: block;
+    font-size: 24px;
+    margin: 0;
+    padding-left: 8px;
 }
 
-.list-item {
+p {
     color: lightgray;
     text-align: left;
     display: block;
-    font-size: 2rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    font-size: 16px;
+    padding-left: 4vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
 }
 
-.paragraph {
+li {
     color: lightgray;
     text-align: left;
     display: block;
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    font-size: 16px;
+    padding-left: 4vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
 }
+
+a {
+    display: block;
+    font-size: 16px;
+    padding-left: 4vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+}
+
+div {
+    width: fit-content;
+    padding-top: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 2rem;
+        padding-left: 1vw;
+        padding-right: 0.25vw;
+        padding-top: 0.25vw;
+    }
+
+    li {
+        font-size: 2rem;
+        padding-left: 1vw;
+        padding-right: 0.25vw;
+        padding-top: 0.25vw;
+    }
+
+    a {
+        font-size: 2rem;
+        padding-left: 1vw;
+        padding-right: 0.25vw;
+        padding-top: 0.25vw;
+    }
+}
+
+//@media screen and (max-width: 600px) {
+//  .title {
+//        font-size: 26vw;
+//    }
+//    .subtitle {
+//        font-size: 8vw;
+//    }
+//    .heading {
+//        font-size: 6vw;
+//    }
+//}
