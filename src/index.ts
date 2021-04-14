@@ -116,6 +116,7 @@ window.onload = () => {
           })
         .then((_) => {
             console.log("callback - tsparticles config loaded");
+            document.getElementById("background_particles")?.setAttribute("style", "");
         })
         .catch((error) => {
             console.error(error);
