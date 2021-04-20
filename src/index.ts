@@ -14,11 +14,11 @@ window.onload = () => {
                         },
                         "opacity": 1
                     },
-                    "enable": false
+                    "enable": false,
                 },
                 "fullScreen": {
                     "enable": true,
-                    "zIndex": 1
+                    "zIndex": -1
                 },
                 "detectRetina": true,
                 "fpsLimit": 60,
@@ -36,12 +36,6 @@ window.onload = () => {
                             "enable": true,
                             "mode": "repulse"
                         },
-                        "onDiv": {
-                            "selectors": [],
-                            "enable": false,
-                            "mode": [],
-                            "type": "circle"
-                        },
                         "onHover": {
                             "enable": true,
                             "mode": "bubble",
@@ -58,9 +52,6 @@ window.onload = () => {
                             "distance": 200,
                             "duration": 0.4,
                             "speed": 1
-                        },
-                        "bounce": {
-                            "distance": 200
                         },
                         "bubble": {
                             "distance": 250,
@@ -199,7 +190,6 @@ window.onload = () => {
                         }
                     },
                     "destroy": {
-                        "mode": "none",
                         "split": {
                             "count": 1,
                             "factor": {
