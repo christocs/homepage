@@ -1,49 +1,44 @@
 {
   "name": "homepage",
-  "version": "3.4.1",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.47",
-    "@types/react": "^16.9.41",
-    "@types/react-dom": "^16.9.8",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-particles-js": "^3.2.1",
-    "react-scripts": "3.4.1",
+  "version": "1.0.0",
+  "description": "Personal homepage for Christo Stephenson",
+  "main": "index.html",
+  "devDependencies": {
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.2",
-    "typescript": "^3.9.5"
+    "node-sass": "^5.0.0",
+    "tsparticles": "^1.26.2",
+    "typescript": "^4.2.4",
+    "parcel-bundler": "^1.9.7",
+    "cross-env": "^5.2.0",
+    "gh-pages": "^3.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "cross-env NODE_ENV=development parcel serve src/index.html",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
+    "move": "move dist/index.html dist/index.md",
+    "deploy": "gh-pages -d dist"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christocs/homepage.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
+  "keywords": [
+    "Christo",
+    "Quentin",
+    "Stephenson",
+    "Software",
+    "Engineer",
+    "C++",
+    "cpp",
+    "C",
+    "Plus",
+    "Coder",
+    "Coding"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christocs/homepage/issues"
   },
   "homepage": "https://christo.dev"
 }
