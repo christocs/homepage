@@ -10,12 +10,14 @@
     "typescript": "^4.2.4",
     "parcel-bundler": "^1.9.7",
     "cross-env": "^5.2.0",
+    "copy": "^0.3.2",
     "gh-pages": "^3.1.0"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel serve src/index.html",
     "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
     "move": "move dist/index.html dist/index.md",
+    "predeploy": "npm run build && copy CNAME dist",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -40,5 +42,5 @@
   "bugs": {
     "url": "https://github.com/christocs/homepage/issues"
   },
-  "homepage": "https://christo.dev"
+  "homepage": "https://www.christo.dev"
 }
