@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.ts"],"names":[],"mappings":";AAEA,aAAA,OAAA,eAAA,QAAA,aAAA,CAAA,OAAA,IAAA,OAAO,OAAS,WAEZ,QAAQ,IAAI","file":"src.06c220c8.js","sourceRoot":"..\\src","sourcesContent":["import { } from 'typescript'\r\n\r\nwindow.onload = () => {\r\n\r\n    console.log('Hello world!');\r\n\r\n};\r\n"]}
