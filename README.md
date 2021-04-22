@@ -16,4 +16,4 @@ Uses minimal frameworks + packages to keep things simple, and improve compatabil
 1. `npm run ghpages`
 
 ## @todo
-- Setup CI/CD for resume and upload it elsewhere
+- Setup CI/CD for resume and upload it properly elsewhere
